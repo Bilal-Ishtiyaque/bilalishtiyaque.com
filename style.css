@@ -1,63 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+/* General Reset and Box Sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+}
+
+a {
+    display: inline-block;
+}
+
+/* Body & Basic Styling */
+body {
+    font-family: 'Indie Flower';
     background-color: #f4f4f9;
     color: #333;
-  }
-  
-  .header {
-    background-color: #0077cc;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
-    padding: 2rem;
-  }
-  
-  .header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .header p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background-color: #005fa3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #004080;
-  }
-  
-  .content {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .footer {
-    text-align: center;
-    background-color: #222;
-    color: white;
-    padding: 1rem;
-  }
-  
+    padding: 20px;
+    transition: all .3s ease;
+}
+
+/* Main Container */
+.main-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 36px;
+    color: #ff6347;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+/* Hide visually */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+
+/* Set icon size */
+.svg-icon svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.svg-icon svg>g rect {
+  fill: gray;
+}
+
+.svg-icon svg>g circle {
+  fill: gray;
+}
+
+.svg-background {
+  opacity: 0.3;
+}
+
+a:hover .svg-background {
+  opacity: 0.6;
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #888;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
